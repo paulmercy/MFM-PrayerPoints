@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="@drawable/bacc"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView
+		android:id="@+id/tittle"
+		android:paddingTop="25.0dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<WebView
+		android:id="@+id/webview"
+		android:scrollbars="none"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+	<HorizontalScrollView
+		android:id="@+id/cool"
+		android:background="@android:drawable/dialog_holo_dark_frame"
+		android:visibility="gone"
+		android:scrollbars="none"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:id="@+id/layoutId"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</HorizontalScrollView>
+</RelativeLayout>

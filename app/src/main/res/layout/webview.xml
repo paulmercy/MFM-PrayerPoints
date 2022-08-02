@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<WebView
+		android:id="@+id/webview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+	<ScrollView
+		android:id="@+id/refresh"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:layout_gravity="center"
+                android:layout_width="200.0dip"
+				android:layout_height="200.0dip"
+				android:layout_marginTop="20.0dip"
+				android:src="@drawable/images"
+				android:layout_weight="1.0" />
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0">
+				<TextView
+					android:textAppearance="?android:textAppearanceMedium"
+					android:typeface="serif"
+					android:textStyle="italic"
+					android:textColor="?attr/textcolor"
+					android:gravity="center_horizontal"
+					android:id="@+id/se"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Connection Error 408 !\n Request Timeout /nNo network connection... Please switch on your Mobile Data or WIFI service " />
+				<Button
+					android:textAppearance="?android:textAppearanceMedium"
+					android:layout_gravity="center_horizontal"
+					android:background="@drawable/refresh"
+					android:layout_width="120.0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20.0dip"
+					android:text="Refresh"
+					android:textColor="@color/colorWhite"
+					android:onClick="Refresh" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

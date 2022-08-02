@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:background="?attr/backgroundcolor"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<RelativeLayout
+
+			android:visibility="gone"
+			android:layout_width="fill_parent"
+			android:layout_height="53.0dip">
+
+			<RelativeLayout
+                android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginTop="6.0dip"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentBottom="true">
+
+
+			</RelativeLayout>
+		</RelativeLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:background="?attr/backgroundcolor"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="3.0dip"
+			android:layout_marginTop="3.0dip"
+			android:layout_marginRight="3.0dip"
+			android:layout_marginBottom="3.0dip">
+
+			<AutoCompleteTextView
+				android:id="@+id/search"
+				android:layout_width="0dp"
+				android:layout_height="54dp"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="1.0"
+				android:background="?attr/cardbackground"
+				android:ellipsize="end"
+				android:ems="8"
+				android:hint="Search Prayer here"
+				android:lines="1"
+				android:paddingLeft="16.0dip"
+				android:textColor="?attr/textcolor"
+				android:textColorHint="?attr/textcolor"
+				android:textSize="16.0sp" />
+
+			<ImageView
+				android:layout_gravity="center_vertical"
+				android:id="@+id/seem"
+				android:src="@drawable/ic_rec"
+				android:background="@drawable/buttoncolor"
+				android:layout_width="30.0dip"
+				android:layout_height="30.0dip"
+				android:layout_marginLeft="8.0dip"
+				android:layout_marginRight="8.0dip" />
+
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical"
+			android:background="?attr/backgroundcolor"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:textSize="16.0sp"
+				android:textStyle="bold"
+				android:textColor="?attr/textcolor"
+				android:gravity="center"
+				android:layout_gravity="center_horizontal"
+				android:id="@+id/se"
+				android:layout_width="230.0dip"
+				android:layout_height="35.0dip"
+				android:layout_margin="2.0dip"
+				android:text="PRAYER POINT CATEGORIES" />
+
+		</LinearLayout>
+		<ExpandableListView
+			android:id="@+id/laptop_list"
+			android:background="?attr/cardbackground"
+			android:paddingLeft="5.0dip"
+			android:paddingRight="5.0dip"
+			android:paddingBottom="3.0dip"
+			android:scrollbars="none"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3.0dip"
+			android:dividerHeight="2dp"
+			android:outlineAmbientShadowColor="@color/button_grey"
+			android:divider="@null"/>
+
+	</LinearLayout>
+</RelativeLayout>

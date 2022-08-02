@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:icon="@drawable/ic_moree"
+        android:orderInCategory="3"
+		android:visible="false"
+		android:title="Hymn Menu"
+		app:showAsAction="ifRoom">
+
+		<menu>
+			<item
+				android:icon="@drawable/ic_artist"
+				android:id="@+id/down"
+				android:orderInCategory="1"
+				android:visible="false"
+				android:title="Download Hymn Audio"
+				app:showAsAction="withText" />
+
+			<item
+				android:icon="@drawable/ic_depts"
+                android:orderInCategory="1"
+				android:title="Downloadable Audio"
+				android:visible="false"
+				app:showAsAction="withText" />
+
+			<item
+				android:icon="@drawable/ic_assignment"
+                android:orderInCategory="3"
+				android:visible="false"
+				android:title="Side Markings"
+				app:showAsAction="withText" />
+		</menu>
+	</item>
+	<item
+		android:title="MFM"
+		android:icon="@drawable/icon2"
+		app:showAsAction="ifRoom"/>
+	<item
+		android:icon="@drawable/ic_audio3"
+        android:orderInCategory="1"
+		android:title="Audio Hymn Player"
+		android:visible="false" />
+
+	<item android:icon="@drawable/ic_sea"
+		android:id="@+id/sear"
+		android:orderInCategory="2"
+		android:title="Search"
+		app:showAsAction="ifRoom" />
+
+</menu>

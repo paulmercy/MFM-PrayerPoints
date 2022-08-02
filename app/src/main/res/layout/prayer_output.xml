@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:keepScreenOn="true"
+	android:background="?attr/backgroundcolor"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/ad_container"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"/>
+		</RelativeLayout>
+
+		<!--<RelativeLayout
+			android:id="@+id/layout_AdsPlacement"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<com.smaato.sdk.banner.widget.BannerView
+				android:id="@+id/bannerView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+		</RelativeLayout>-->
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<AutoCompleteTextView
+				android:id="@+id/search"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="5.0dip"
+				android:layout_weight="1.0"
+				android:ems="8"
+				android:hint="Input Prayer Topic here..."
+				android:inputType="textCapSentences"
+				android:paddingLeft="16.0dip"
+				android:textColor="?attr/textcolor"
+				android:textColorHighlight="?attr/textcolor"
+				android:textColorHint="?attr/textcolor"
+				android:textSize="18.0sp"
+				android:visibility="gone" />
+
+			<ImageView
+				android:id="@+id/seem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="8.0dip"
+				android:layout_marginRight="8.0dip"
+				android:background="@drawable/ic_rec2"
+				android:visibility="gone" />
+		</LinearLayout>
+
+
+		<LinearLayout
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:orientation="vertical" />
+
+		<TextView
+			android:id="@+id/hymny"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5.0dip"
+			android:layout_marginBottom="5.0dip"
+			android:text="Prayer"
+			android:textAppearance="?android:textAppearanceLarge"
+			android:textColor="?attr/textcolor"
+			android:textStyle="bold|italic"
+			android:typeface="serif" />
+
+		<ScrollView
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<org.sufficientlysecure.htmltextview.HtmlTextView
+					android:id="@+id/loadi"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:layout_margin="10.0dip"
+					android:focusable="true"
+					android:textAppearance="@android:style/TextAppearance.Medium"
+					android:textColor="?attr/textcolor" />
+
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

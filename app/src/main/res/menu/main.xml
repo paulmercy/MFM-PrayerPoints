@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+		android:id="@+id/preq"
+		android:title="Make Prayer Request"
+		android:visible="false"
+		android:titleCondensed="prayer request" />
+
+	<item
+        android:visible="false"
+		android:title="MFM">
+	</item>
+	<item
+		android:icon="@drawable/icon2"
+		android:title="Logo"
+		app:showAsAction="ifRoom">
+	</item>
+	<item
+		android:icon="@drawable/ic_face"
+		android:id="@+id/twit"
+		android:title="fbook"
+		android:titleCondensed="fbook"
+		app:showAsAction="ifRoom" />
+	<item
+		android:icon="@drawable/ic_gmail"
+		android:id="@+id/gmail"
+		android:title="Email Us"
+		android:titleCondensed="Email Us"
+		app:showAsAction="ifRoom" />
+	<item
+		android:icon="@drawable/ic_sety"
+        android:orderInCategory="1"
+		android:visible="false"
+		android:title="Personalize"
+		app:showAsAction="ifRoom" />
+
+
+</menu>

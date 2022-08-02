@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="4.0dip">
+
+	<ScrollView
+		android:orientation="vertical"
+		android:scrollbars="none"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:layout_gravity="center_horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2.0dip" />
+
+			<LinearLayout
+				android:layout_gravity="center"
+				android:orientation="vertical"
+				android:id="@+id/simp"
+				android:background="?attr/backgroundcolor"
+				android:paddingLeft="7.0dip"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="7.0dip">
+
+				<TextView
+					android:textColor="?attr/textcolor"
+					android:autoLink="all"
+					android:layout_gravity="end"
+					android:background="?attr/backgroundcolor"
+					android:padding="4.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="3.0dip"
+					android:text="@string/aboutme"
+					android:layout_weight="0.5" />
+
+				<ImageView
+					android:layout_gravity="center_horizontal"
+					android:padding="1.0dip"
+					android:layout_width="180.0dip"
+					android:layout_height="101.0dip"
+					android:layout_marginLeft="2.0dip"
+					android:layout_marginTop="4.0dip"
+					android:layout_marginBottom="7.0dip" />
+
+				<TextView
+					android:textColor="?attr/textcolor"
+					android:autoLink="all"
+					android:layout_gravity="end"
+					android:background="?attr/backgroundcolor"
+					android:padding="4.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="3.0dip"
+					android:text="\nTHE DEVELOPER : Paul Ikeadim\n\nEmail : cpaul741@gmail.com \nOur Contact : +2347033474776 or +2348166387977."
+					android:layout_weight="0.5" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="vertical"
+				android:background="@color/colorPurple"
+				android:padding="3.0dip"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4.0dip"
+				android:layout_alignBottom="@id/simp">
+
+				<TextView
+					android:textSize="15.0sp"
+					android:textColor="#fff4f4f4"
+					android:text="If you do things correctly, God will bless your efforts"
+					android:layout_gravity="center"
+					android:id="@+id/prayertopic"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3.0dip"
+					android:maxLines="1" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

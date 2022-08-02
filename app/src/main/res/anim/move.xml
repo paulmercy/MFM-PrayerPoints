@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:interpolator="@android:anim/accelerate_interpolator">
+	<translate xmlns:android="http://schemas.android.com/apk/res/android"
+		android:duration="10000"
+		android:repeatCount="infinite"
+		android:repeatMode="reverse"
+		android:fromXDelta="-75.0%p"
+		android:toXDelta="75.0%p" />
+	<translate
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:duration="10000"
+		android:startOffset="800"
+		android:repeatCount="infinite"
+		android:repeatMode="reverse"
+		android:fromXDelta="75.0%p"
+		android:toXDelta="-75.0%p" />
+</set>

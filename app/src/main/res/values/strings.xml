@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="spons" tools:ignore="ExtraTranslation">"       Thanks for your good heart towards promoting this app, supporting the work of God. You are blesses.
+
+  E-mail :   cpaul741@gmail.com
+
+  Account Details
+        Bank Name: EcoBank
+        Acc Name: Ikeadim Paul
+        Acc No: 2871279942
+
+  Paypal: ikeadimpaul@gmail.com
+
+          \u0009\u0009         Thanks for Your Support  !!!"</string>
+    <string name="mfmc" tools:ignore="ExtraTranslation">"       MFM International Contact Info.
+
+    Name: Mountain of Fire and Miracles Ministries (MFM)
+
+ Address :   13 Olasimbo Street, Onike, Yaba, Lagos, Nigeria.
+
+ E-mail :   enquiries@mountainoffire.org
+
+ Phone :   +2348161796087, +2349070888888
+
+ Website :  mountainoffire.org
+
+  Counselling: +2348087700112, +2348164028731, +2348037130680, +2348099998807
+
+
+            \u0009\u0009         Surely the Lord is in this Place !!!"</string>
+
+
+    <string name="app_name">MFM PrayerPoints</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="aboutme">"Many people have been Christains for years and have not been able to discover what belongs to them, let alone getting it from the enemy".
+"</string>
+    <string name="about">" -MFM PrayerPoints
+ - Developer : Paulmeric</string>
+</resources>
